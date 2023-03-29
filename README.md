@@ -51,10 +51,10 @@ Para rodar o projeto é necessário que você tenha instalado na sua máquina as
 
 ```bash
 # Clone este repositório através do terminal
-$ git clone git@github.com:steinerstt/api-myclients.git
+$ git clone git@github.com:steinerstt/api-myClients.git
 
 # Acesse a pasta do projeto
-$ cd api-myclients
+$ cd api-myClients
 ```
 
 > Crie um arquivo chamado .env na raiz do projeto e copies as informações que estão no .env.example e preencha as informações de acordo com o seu ambiente
@@ -63,7 +63,7 @@ $ cd api-myclients
 # Instale as dependências do projeto
 $ yarn install
 
-# Persistindo às migrations no banco de dados
+# Persistindo as migrations no banco de dados
 $ yarn typeorm migration:run -d src/data-source.ts
 
 # Rode o projeto
@@ -73,6 +73,7 @@ $ yarn dev
 <br>
 
 # 📋 Documentação
+> Na raiz do projeto existe um arquivo chamado *Insomnia_my_clients.json*, ele pode ser importado e usado como documentação no Insomnia
 
 ## Cadastro de usuário
 
@@ -122,7 +123,7 @@ Pissíveis erros
 
 ```JSON
 {
-	"message": "firstName is a required field | lastName is a required field | email is a required field | password is a required field | mobileNumber is a required field"
+  "message": "firstName is a required field | lastName is a required field | email is a required field | password is a required field | mobileNumber is a required field"
 }
 ```
 
@@ -132,13 +133,13 @@ Pissíveis erros
 
 ```JSON
 {
-	"message": "Email already registered"
+  "message": "Email already registered"
 }
 ```
 
 ```JSON
 {
-	"message": "Mobile number already registered"
+  "message": "Mobile number already registered"
 }
 ```
 
@@ -348,7 +349,7 @@ body
 
 > mobileNumber deve ter 11 números
 
-> Pode atualizar qualquer dados, não precisa enviar todos
+> Pode atualizar qualquer dado, não precisa enviar todos
 
 #
 
@@ -530,7 +531,7 @@ body
 
 > mobileNumber deve ter 11 números
 
-> Pode atualizar qualquer dados, não precisa enviar todos
+> Pode atualizar qualquer dado, não precisa enviar todos
 
 #
 
@@ -554,7 +555,6 @@ Retorno esperado - 200
 
 > mobileNumber length 11 numbers
 
-> - any data can be updated, no need to update all
 
 #
 
